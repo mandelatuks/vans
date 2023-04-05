@@ -242,3 +242,20 @@ color: #161616;
 .van-type.luxury:hover, .van-type.luxury.selected {
     background-color: #161616;
 }
+
+footer{
+    width: 100%;
+height: 50px;
+background: #252525;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 23px;
+/* or 164% */
+
+text-align: center;
+
+color: #AAAAAA;
+}
