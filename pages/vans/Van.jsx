@@ -20,19 +20,20 @@ export default function Van() {
 
       <div className="van-body">
         {vans.map((van) => (
-            <div key={van.id} className="van">
-               <Link to={`/vans/${van.id}`}>
-                  <img src={van.imageUrl} className="van-profile" />
-                  <div className="van-name-price">
-                    <h3 className="van-name">{van.name}</h3>
-                    <p className="van-price">
-                      ${van.price} <br></br>
-                      <span>/day</span>
-                    </p>
-                  </div>
-                  <i className={`van-type ${van.type} selected`}>{van.type}</i>
-                </Link>
-            </div>
+       
+          <div key={van.id} className="van">
+            <Link to={`/vans/${van.id}`}>
+              <img src={van.imageUrl} className="van-profile" />
+              <div className="van-name-price">
+                <h3 className="van-name">{van.name}</h3>
+                <p className="van-price">
+                  ${van.price} <br></br>
+                  <span>/day</span>
+                </p>
+              </div>
+              <i className={`van-type ${van.type} selected`}>{van.type}</i>
+            </Link>
+          </div>
         ))}
       </div>
     </div>
